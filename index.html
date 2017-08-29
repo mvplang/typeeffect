@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>type effect</title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="type.css"></link>
+</head>
+
+<body>
+    <div class="wrap">
+        I'm a <span class="typing-box"></span>
+    </div>
+
+    <script src="type.js"></script>
+    <script>
+        var options = {
+            delay_after_typing : 10, //how many times of typing_interval
+            typing_interval : 100,
+            interval_for_word : 2000,
+            keep_final_word : false,
+            cursor_interval : 400,
+            delay : 1000, //when to begin typing
+            infinite : true,
+            contents : ["Designer","Developer", "Software Engineer","Please contact me!"]
+        }
+
+        $(".typing-box").typingBox(options);
+    </script>
+  
+</body>
+</html>
